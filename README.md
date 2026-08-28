@@ -2,7 +2,7 @@
 
 French-first, bilingual web platform for internal AI-system governance. It provides a central registry, explainable risk assessment, compliance audits, corrective actions, incident management, documented human decisions, an audit trail, dashboard indicators, and PDF reporting.
 
-> Educational prototype for an ENSIASD MGSI internship project. All data is fictional. GovAI Hub is not legal advice, regulatory certification, ISO certification, or an official compliance assessment.
+> Educational prototype for an ENSIASD MGSI internship project.
 
 ## What is implemented
 
@@ -19,7 +19,6 @@ French-first, bilingual web platform for internal AI-system governance. It provi
 - Role-oriented workspace and notifications
 - Governance dashboard with PostgreSQL indicators and a protected PDF report
 - French-first interface with English language preference
-- Fictional seed portfolio, including RecruitAI
 
 ## Roles
 
