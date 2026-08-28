@@ -88,7 +88,6 @@ src/
   lib/auth/          Authorization and roles
   lib/data/          Database query layer
   lib/risk-engine.ts Explainable scoring rules
-  generated/prisma/  Generated client - do not edit
 docs/
   design-system.md   Brand and UX guidance
 ```

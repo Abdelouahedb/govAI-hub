@@ -1,8 +1,0 @@
-{
-  "date": "2026-08-06",
-  "framework": "Next.js 16 App Router",
-  "fontStack": "System UI via design tokens",
-  "palette": "OKLCH token system",
-  "motion": "motion-cut",
-  "spacing": "4px semantic scale"
-}

@@ -18,6 +18,15 @@
 /.next/
 /out/
 
+# generated clients and local tooling evidence
+/src/generated/prisma/
+/.playwright-cli/
+/.hallmark/
+/.impeccable/
+/artifacts/
+/output/
+/tmp/
+
 # production
 /build
 

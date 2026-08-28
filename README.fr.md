@@ -88,7 +88,6 @@ src/
   lib/auth/          Autorisation et rôles
   lib/data/          Couche de requêtes de base de données
   lib/risk-engine.ts Règles de notation explicables
-  generated/prisma/  Client généré — ne pas modifier
 docs/
   design-system.md   Guide de marque et d’expérience utilisateur
 ```
@@ -167,5 +166,3 @@ pnpm build
 ```
 
 Exécutez ces vérifications avant une démonstration ou un déploiement. Le rapport PDF et le tableau de bord utilisent les enregistrements actuels de la base de données et doivent être actualisés après toute modification pertinente du processus.
-
-
