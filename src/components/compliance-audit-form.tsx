@@ -1,0 +1,10 @@
+"use client";
+
+import { useActionState } from "react";
+import { saveComplianceAuditAction, type ComplianceAuditFormState } from "@/app/actions/compliance-audits";
+
+type Control = { id: string; code: string; title: string; description: string; evidenceGuidance: string | null; rationale: string };
+export function ComplianceAuditForm({ systemId, controls }: { systemId: string; controls: Control[] }) {
+  const [state, action, pending] = useActionState<ComplianceAuditFormState, FormData>(saveComplianceAuditAction, undefined);
+  return <form action={action} className="workspace-form audit-form"><input type="hidden" name="systemId" value={systemId} /><input type="hidden" name="controlIds" value={controls.map((control) => control.id).join(",")} />{controls.map((control) => <section className="audit-control" key={control.id}><header><span>{control.code}</span><h2>{control.title}</h2></header><p>{control.description}</p><p className="audit-rationale"><strong>Pourquoi ce contrôle ?</strong> {control.rationale}</p>{control.evidenceGuidance && <p className="audit-guidance"><strong>Preuve attendue :</strong> {control.evidenceGuidance}</p>}<label>Résultat de vérification<select name={`result_${control.id}`} required defaultValue=""><option value="" disabled>Sélectionner un résultat</option><option value="CONFORMING">Conforme</option><option value="PARTIALLY_CONFORMING">Partiellement conforme</option><option value="NON_CONFORMING">Non conforme</option><option value="NOT_APPLICABLE">Non applicable</option></select></label><label>Constat de l’auditeur<textarea name={`finding_${control.id}`} placeholder="Expliquez le constat, l’écart ou la justification." /></label><label>Preuve examinée<textarea name={`evidence_${control.id}`} placeholder="Lien, référence de document, procédure, résultat de test ou autre élément vérifié." /></label></section>)}{state?.error && <p className="form-error" role="alert">{state.error}</p>}<button className="primary-button" type="submit" disabled={pending}>{pending ? "Enregistrement de l’audit…" : "Terminer l’audit de conformité"}</button></form>;
+}

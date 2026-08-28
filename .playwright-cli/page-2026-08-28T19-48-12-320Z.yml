@@ -1,0 +1,316 @@
+- generic [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - banner [ref=f2e3]:
+      - link "GovAI Hub" [ref=f2e4] [cursor=pointer]:
+        - /url: /
+      - navigation "Primary navigation" [ref=f2e5]:
+        - link "Administration" [ref=f2e6] [cursor=pointer]:
+          - /url: /
+        - link "Registre" [ref=f2e10] [cursor=pointer]:
+          - /url: /systems
+        - link "Vue d’ensemble" [ref=f2e14] [cursor=pointer]:
+          - /url: /dashboard
+        - link "Gérer les utilisateurs" [ref=f2e18] [cursor=pointer]:
+          - /url: /admin/users
+      - generic [ref=f2e22]:
+        - link "4 éléments demandent votre attention" [ref=f2e23] [cursor=pointer]:
+          - /url: /notifications
+          - generic [ref=f2e26]: "4"
+        - link "Open profile settings for Amine Mansouri" [ref=f2e27] [cursor=pointer]:
+          - /url: /profile
+          - generic [ref=f2e28]: AM
+          - generic [ref=f2e29]:
+            - strong [ref=f2e30]: Amine Mansouri
+            - generic [ref=f2e31]: Administrateur
+        - form "Language selection" [ref=f2e32]:
+          - button "FR" [pressed] [ref=f2e33] [cursor=pointer]
+          - generic [ref=f2e34]: /
+          - button "EN" [ref=f2e35] [cursor=pointer]
+        - button "Déconnexion" [ref=f2e37] [cursor=pointer]
+    - main [ref=f2e38]:
+      - generic [ref=f2e39]:
+        - generic [ref=f2e41]:
+          - paragraph [ref=f2e42]: ADMINISTRATION
+          - heading "Personnes et accès" [level=1] [ref=f2e43]
+          - paragraph [ref=f2e44]: Attribuez les responsabilités de gouvernance, maintenez les informations de compte à jour et retirez les accès lorsqu’ils ne sont plus nécessaires.
+        - generic [ref=f2e45]:
+          - complementary [ref=f2e46]:
+            - generic [ref=f2e47]:
+              - heading "Ajouter une personne" [level=2] [ref=f2e48]
+              - paragraph [ref=f2e49]: Créez un compte uniquement lorsqu’une personne nommée a besoin d’accéder à un flux de gouvernance.
+            - generic [ref=f2e50]:
+              - generic [ref=f2e51]:
+                - generic [ref=f2e52]:
+                  - text: Nom complet
+                  - textbox "Nom complet" [ref=f2e53]
+                - generic [ref=f2e54]:
+                  - text: Adresse e-mail
+                  - textbox "Adresse e-mail" [ref=f2e55]
+                - generic [ref=f2e56]:
+                  - text: Rôle
+                  - combobox "Rôle" [ref=f2e57]:
+                    - option "Administrateur"
+                    - option "Responsable du système d’IA" [selected]
+                    - option "Auditeur risques et conformité"
+                    - option "Approbateur de gouvernance"
+                    - option "Lecteur"
+                - generic [ref=f2e58]:
+                  - text: Département
+                  - combobox "Département" [ref=f2e59]:
+                    - option "Aucun département attribué" [selected]
+                    - option "Customer Operations (OPS)"
+                    - option "Finance (FIN)"
+                    - option "Human Resources (HR)"
+                    - option "Marketing (MKT)"
+                    - option "Sales Planning (SALES)"
+                - generic [ref=f2e60]:
+                  - text: Mot de passe initial
+                  - textbox "Mot de passe initial" [ref=f2e61]
+              - paragraph [ref=f2e62]: Définissez un mot de passe initial unique d’au moins 12 caractères et transmettez-le à la personne par un canal sécurisé.
+              - button "Créer le compte utilisateur" [ref=f2e63] [cursor=pointer]
+          - region [ref=f2e64]:
+            - generic [ref=f2e65]:
+              - generic [ref=f2e66]:
+                - generic [ref=f2e67]: Comptes
+                - strong [ref=f2e68]: "8"
+              - generic [ref=f2e69]:
+                - generic [ref=f2e70]: Actifs
+                - strong [ref=f2e71]: "8"
+              - generic [ref=f2e72]:
+                - generic [ref=f2e73]: Administrateurs
+                - strong [ref=f2e74]: "1"
+            - generic [ref=f2e75]:
+              - generic [ref=f2e76]:
+                - heading "Annuaire des personnes" [level=2] [ref=f2e77]
+                - paragraph [ref=f2e78]: Ouvrez une personne pour mettre à jour ses responsabilités ou son statut d’accès.
+              - generic [ref=f2e79]: 8 comptes
+            - generic [ref=f2e80]:
+              - group [ref=f2e81]:
+                - generic "Amine Mansouri amine.admin@govai.example Administrateur Aucun département Actif" [active] [ref=f2e82] [cursor=pointer]:
+                  - generic [ref=f2e83]: AM
+                  - generic [ref=f2e84]:
+                    - strong [ref=f2e85]: Amine Mansouri
+                    - generic [ref=f2e86]: amine.admin@govai.example
+                  - generic [ref=f2e87]:
+                    - strong [ref=f2e88]: Administrateur
+                    - generic [ref=f2e89]: Aucun département
+                  - generic [ref=f2e90]: Actif
+                - generic [ref=f2e207]:
+                  - generic [ref=f2e208]:
+                    - text: Nom complet
+                    - textbox "Nom complet" [ref=f2e209]: Amine Mansouri
+                  - generic [ref=f2e210]:
+                    - text: Adresse e-mail
+                    - textbox "Adresse e-mail" [ref=f2e211]: amine.admin@govai.example
+                  - generic [ref=f2e212]:
+                    - text: Rôle de gouvernance
+                    - combobox "Rôle de gouvernance" [ref=f2e213]:
+                      - option "Administrateur" [selected]
+                      - option "Responsable du système d’IA"
+                      - option "Auditeur risques et conformité"
+                      - option "Approbateur de gouvernance"
+                      - option "Lecteur"
+                  - generic [ref=f2e214]:
+                    - text: Département
+                    - combobox "Département" [ref=f2e215]:
+                      - option "Aucun département attribué" [selected]
+                      - option "Customer Operations (OPS)"
+                      - option "Finance (FIN)"
+                      - option "Human Resources (HR)"
+                      - option "Marketing (MKT)"
+                      - option "Sales Planning (SALES)"
+                  - generic [ref=f2e216] [cursor=pointer]:
+                    - checkbox "Accès au compte Cette personne peut se connecter et recevoir des attributions." [checked] [ref=f2e217]
+                    - generic [ref=f2e218]:
+                      - strong [ref=f2e219]: Accès au compte
+                      - generic [ref=f2e220]: Cette personne peut se connecter et recevoir des attributions.
+                  - generic [ref=f2e221]:
+                    - paragraph [ref=f2e222]: Créé le 6 août 2026
+                    - button "Enregistrer le compte" [ref=f2e223] [cursor=pointer]
+                - generic [ref=f2e226]:
+                  - generic [ref=f2e227]:
+                    - heading "Réinitialiser le mot de passe" [level=3] [ref=f2e228]
+                    - paragraph [ref=f2e229]: Définissez un mot de passe temporaire, puis transmettez-le à la personne par un canal sécurisé.
+                  - generic [ref=f2e230]:
+                    - generic [ref=f2e231]:
+                      - text: Mot de passe temporaire
+                      - textbox "Mot de passe temporaire" [ref=f2e232]
+                    - generic [ref=f2e233]:
+                      - text: Confirmer le mot de passe
+                      - textbox "Confirmer le mot de passe" [ref=f2e234]
+                  - generic [ref=f2e235]:
+                    - generic [ref=f2e236]: Au moins 12 caractères.
+                    - button "Enregistrer le mot de passe temporaire" [ref=f2e237] [cursor=pointer]
+              - group [ref=f2e93]:
+                - generic "Imane Chraibi imane.approver@govai.example Approbateur de gouvernance Aucun département Actif" [ref=f2e94] [cursor=pointer]:
+                  - generic [ref=f2e95]: IC
+                  - generic [ref=f2e96]:
+                    - strong [ref=f2e97]: Imane Chraibi
+                    - generic [ref=f2e98]: imane.approver@govai.example
+                  - generic [ref=f2e99]:
+                    - strong [ref=f2e100]: Approbateur de gouvernance
+                    - generic [ref=f2e101]: Aucun département
+                  - generic [ref=f2e102]: Actif
+                - option "Administrateur"
+                - option "Responsable du système d’IA"
+                - option "Auditeur risques et conformité"
+                - option "Approbateur de gouvernance" [selected]
+                - option "Lecteur"
+                - option "Aucun département attribué" [selected]
+                - option "Customer Operations (OPS)"
+                - option "Finance (FIN)"
+                - option "Human Resources (HR)"
+                - option "Marketing (MKT)"
+                - option "Sales Planning (SALES)"
+              - group [ref=f2e105]:
+                - generic "Lina Bensaid lina.owner@govai.example Responsable du système d’IA Human Resources Actif" [ref=f2e106] [cursor=pointer]:
+                  - generic [ref=f2e107]: LB
+                  - generic [ref=f2e108]:
+                    - strong [ref=f2e109]: Lina Bensaid
+                    - generic [ref=f2e110]: lina.owner@govai.example
+                  - generic [ref=f2e111]:
+                    - strong [ref=f2e112]: Responsable du système d’IA
+                    - generic [ref=f2e113]: Human Resources
+                  - generic [ref=f2e114]: Actif
+                - option "Administrateur"
+                - option "Responsable du système d’IA" [selected]
+                - option "Auditeur risques et conformité"
+                - option "Approbateur de gouvernance"
+                - option "Lecteur"
+                - option "Aucun département attribué"
+                - option "Customer Operations (OPS)"
+                - option "Finance (FIN)"
+                - option "Human Resources (HR)" [selected]
+                - option "Marketing (MKT)"
+                - option "Sales Planning (SALES)"
+              - group [ref=f2e117]:
+                - generic "Nadia El Amrani nadia.hr@govai.example Responsable du système d’IA Human Resources Actif" [ref=f2e118] [cursor=pointer]:
+                  - generic [ref=f2e119]: NE
+                  - generic [ref=f2e120]:
+                    - strong [ref=f2e121]: Nadia El Amrani
+                    - generic [ref=f2e122]: nadia.hr@govai.example
+                  - generic [ref=f2e123]:
+                    - strong [ref=f2e124]: Responsable du système d’IA
+                    - generic [ref=f2e125]: Human Resources
+                  - generic [ref=f2e126]: Actif
+                - option "Administrateur"
+                - option "Responsable du système d’IA" [selected]
+                - option "Auditeur risques et conformité"
+                - option "Approbateur de gouvernance"
+                - option "Lecteur"
+                - option "Aucun département attribué"
+                - option "Customer Operations (OPS)"
+                - option "Finance (FIN)"
+                - option "Human Resources (HR)" [selected]
+                - option "Marketing (MKT)"
+                - option "Sales Planning (SALES)"
+              - group [ref=f2e129]:
+                - generic "Omar Benali omar.governance@govai.example Approbateur de gouvernance Aucun département Actif" [ref=f2e130] [cursor=pointer]:
+                  - generic [ref=f2e131]: OB
+                  - generic [ref=f2e132]:
+                    - strong [ref=f2e133]: Omar Benali
+                    - generic [ref=f2e134]: omar.governance@govai.example
+                  - generic [ref=f2e135]:
+                    - strong [ref=f2e136]: Approbateur de gouvernance
+                    - generic [ref=f2e137]: Aucun département
+                  - generic [ref=f2e138]: Actif
+                - option "Administrateur"
+                - option "Responsable du système d’IA"
+                - option "Auditeur risques et conformité"
+                - option "Approbateur de gouvernance" [selected]
+                - option "Lecteur"
+                - option "Aucun département attribué" [selected]
+                - option "Customer Operations (OPS)"
+                - option "Finance (FIN)"
+                - option "Human Resources (HR)"
+                - option "Marketing (MKT)"
+                - option "Sales Planning (SALES)"
+              - group [ref=f2e141]:
+                - generic "Rayan Ait Lahcen rayan.auditor@govai.example Auditeur risques et conformité Aucun département Actif" [ref=f2e142] [cursor=pointer]:
+                  - generic [ref=f2e143]: RA
+                  - generic [ref=f2e144]:
+                    - strong [ref=f2e145]: Rayan Ait Lahcen
+                    - generic [ref=f2e146]: rayan.auditor@govai.example
+                  - generic [ref=f2e147]:
+                    - strong [ref=f2e148]: Auditeur risques et conformité
+                    - generic [ref=f2e149]: Aucun département
+                  - generic [ref=f2e150]: Actif
+                - option "Administrateur"
+                - option "Responsable du système d’IA"
+                - option "Auditeur risques et conformité" [selected]
+                - option "Approbateur de gouvernance"
+                - option "Lecteur"
+                - option "Aucun département attribué" [selected]
+                - option "Customer Operations (OPS)"
+                - option "Finance (FIN)"
+                - option "Human Resources (HR)"
+                - option "Marketing (MKT)"
+                - option "Sales Planning (SALES)"
+              - group [ref=f2e153]:
+                - generic "Salma Idrissi salma.audit@govai.example Auditeur risques et conformité Aucun département Actif" [ref=f2e154] [cursor=pointer]:
+                  - generic [ref=f2e155]: SI
+                  - generic [ref=f2e156]:
+                    - strong [ref=f2e157]: Salma Idrissi
+                    - generic [ref=f2e158]: salma.audit@govai.example
+                  - generic [ref=f2e159]:
+                    - strong [ref=f2e160]: Auditeur risques et conformité
+                    - generic [ref=f2e161]: Aucun département
+                  - generic [ref=f2e162]: Actif
+                - option "Administrateur"
+                - option "Responsable du système d’IA"
+                - option "Auditeur risques et conformité" [selected]
+                - option "Approbateur de gouvernance"
+                - option "Lecteur"
+                - option "Aucun département attribué" [selected]
+                - option "Customer Operations (OPS)"
+                - option "Finance (FIN)"
+                - option "Human Resources (HR)"
+                - option "Marketing (MKT)"
+                - option "Sales Planning (SALES)"
+              - group [ref=f2e165]:
+                - generic "Youssef Karim youssef.ops@govai.example Responsable du système d’IA Customer Operations Actif" [ref=f2e166] [cursor=pointer]:
+                  - generic [ref=f2e167]: YK
+                  - generic [ref=f2e168]:
+                    - strong [ref=f2e169]: Youssef Karim
+                    - generic [ref=f2e170]: youssef.ops@govai.example
+                  - generic [ref=f2e171]:
+                    - strong [ref=f2e172]: Responsable du système d’IA
+                    - generic [ref=f2e173]: Customer Operations
+                  - generic [ref=f2e174]: Actif
+                - option "Administrateur"
+                - option "Responsable du système d’IA" [selected]
+                - option "Auditeur risques et conformité"
+                - option "Approbateur de gouvernance"
+                - option "Lecteur"
+                - option "Aucun département attribué"
+                - option "Customer Operations (OPS)" [selected]
+                - option "Finance (FIN)"
+                - option "Human Resources (HR)"
+                - option "Marketing (MKT)"
+                - option "Sales Planning (SALES)"
+    - contentinfo [ref=f2e177]:
+      - generic [ref=f2e178]:
+        - generic [ref=f2e179]:
+          - link "GovAI Hub" [ref=f2e180] [cursor=pointer]:
+            - /url: /
+            - img "GovAI Hub" [ref=f2e181]
+          - paragraph [ref=f2e182]: Espace de travail pour une gouvernance IA traçable et une décision humaine documentée.
+        - navigation "Navigation du pied de page" [ref=f2e183]:
+          - heading "Espace de travail" [level=2] [ref=f2e184]
+          - link "Mon espace" [ref=f2e185] [cursor=pointer]:
+            - /url: /
+          - link "Registre des systèmes" [ref=f2e186] [cursor=pointer]:
+            - /url: /systems
+          - link "Vue d’ensemble" [ref=f2e187] [cursor=pointer]:
+            - /url: /dashboard
+        - navigation "Aide et compte" [ref=f2e188]:
+          - heading "Aide et compte" [level=2] [ref=f2e189]
+          - link "Manuel d’utilisation" [ref=f2e190] [cursor=pointer]:
+            - /url: /manual
+          - link "Mon profil" [ref=f2e193] [cursor=pointer]:
+            - /url: /profile
+          - link "Notifications" [ref=f2e194] [cursor=pointer]:
+            - /url: /notifications
+      - paragraph [ref=f2e196]: © 2026 GovAI Hub
+  - button "Open Next.js Dev Tools" [ref=f2e202] [cursor=pointer]
+  - alert [ref=f2e206]
