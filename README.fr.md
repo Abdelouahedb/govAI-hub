@@ -1,5 +1,7 @@
 # GovAI Hub
 
+> Maintenance de la base : pour une base existante, consultez la [réparation ponctuelle de l’historique des migrations](docs/incident-migration-repair.md). Pour les migrations Neon, configurez `DATABASE_URL_UNPOOLED` avec la connexion directe ; l’application conserve `DATABASE_URL` avec le pool de connexions. Une base neuve utilise les commandes habituelles ci-dessous.
+
 Plateforme web bilingue, prioritairement en français, dédiée à la gouvernance interne des systèmes d’IA. Elle propose un registre centralisé, une évaluation des risques explicable, des audits de conformité, des actions correctives, une gestion des incidents, des décisions humaines documentées, une piste d’audit, des indicateurs de tableau de bord et la génération de rapports PDF.
 
 > Prototype pédagogique réalisé dans le cadre d’un stage ENSIASD MGSI. Toutes les données sont fictives. GovAI Hub ne constitue ni un avis juridique, ni une certification réglementaire ou ISO, ni une évaluation officielle de conformité.

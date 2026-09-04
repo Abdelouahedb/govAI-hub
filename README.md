@@ -119,6 +119,8 @@ pnpm db:seed
 
 Never commit `.env`, credentials, or passwords.
 
+For migrations on Neon, set `DATABASE_URL_UNPOOLED` to the direct database connection; keep the pooled `DATABASE_URL` for the application. Existing databases created before the duplicate incident migration was repaired should follow [the one-time migration history repair](docs/incident-migration-repair.md). Fresh databases use the normal commands above.
+
 ## Development accounts
 
 The fictional seed uses the initial password stored only in `SEED_USER_PASSWORD` in your local `.env`.

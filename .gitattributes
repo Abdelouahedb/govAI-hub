@@ -1,0 +1,2 @@
+# Prisma stores checksums of the exact migration bytes; preserve them on Windows.
+prisma/migrations/**/migration.sql text eol=lf

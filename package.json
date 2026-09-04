@@ -13,6 +13,8 @@
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy",
+    "db:repair-incident-history": "node scripts/repair-incident-migration.mjs",
+    "test:migrations": "node scripts/verify-migrations.mjs",
     "db:seed": "prisma db seed",
     "db:studio": "prisma studio"
   },
